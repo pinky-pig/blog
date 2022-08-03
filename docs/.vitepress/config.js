@@ -15,7 +15,7 @@ export default defineConfig({
 
   themeConfig: {
     siteTitle: 'Arvin Wang',
-    logo:'/man.svg',
+    logo: { light: '/man_light.svg', dark: '/man_dark.svg' },
 
     nav: [
       { text: 'About', link: '/about/', activeMatch: '/about/' },
