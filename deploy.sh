@@ -1,23 +1,21 @@
 #!/usr/bin/env sh
 
-# abort on errors
+# 关于错误
 set -e
 
-# build
+# 打包VitePress项目
 npm run docs:build
 
-# navigate into the build output directory
+# 进入生成的文件夹目录
 cd docs/.vitepress/dist
 
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
+# 执行命令上传到GitHub仓库到 gh-pages 分支（代码在master分支，打包生成的静态页面在gh-pages分支）
 git init
 git add -A
 git commit -m 'deploy'
 
 git push -f https://github.com/pinky-pig/blog.git master:gh-pages
 
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
+# 返回目录，将刚才打包生成的静态文件在目录中删除
 cd -
 rm -rf docs/.vitepress/dist

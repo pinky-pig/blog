@@ -6,7 +6,9 @@ export default [
         collapsible: true,
         collapsed: false,
         items: [
-            { text: 'vitePress+github搭建个人博客', link: `${commonPath}/note/vitePressGithubBlog.md` }, // /guide/index.md
+            { text: 'VitePress+GitHub搭建个人博客', link: `${commonPath}/note/VitePressGitHubBlog.md` }, 
+            { text: 'PicGo+GitHub搭建个人图床', link: `${commonPath}/note/PicBed.md` }, 
+            { text: 'VitePress配置', link: `${commonPath}/note/VitePressConfig.md` }, 
         ]
     },
     {
