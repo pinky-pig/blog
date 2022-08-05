@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 import blog from "./sidebar_conf/blog";
 import project from "./sidebar_conf/project";
 
-{/* <link rel="icon" href="/src/assets/image/logo.png" /> */}
+{/* <link rel="icon" href="/src/assets/image/logo.png" /> */ }
 
 export default defineConfig({
   base: '/blog/',
@@ -16,6 +16,9 @@ export default defineConfig({
   themeConfig: {
     siteTitle: 'Arvin Wang',
     logo: { light: '/man_light.svg', dark: '/man_dark.svg' },
+    // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
+    lastUpdated: 'Last Updated', // string | boolean
+    smoothScroll: true,  // 启动页面丝滑滚动
 
     nav: [
       { text: 'About', link: '/about/', activeMatch: '/about/' },
@@ -39,7 +42,15 @@ export default defineConfig({
       '/blog/': blog,
       '/project/': project,
     },
-    
+
+    algolia: {
+      appId: 'L9KMDUKCGI',
+      apiKey: 'ab27f8eec3147ace8f540b92e68504c7',
+      indexName: 'pinky-pig',
+      // searchParameters: {
+      //     facetFilters: ['tags:guide,api']
+      // }
+    },
 
   }
 })
