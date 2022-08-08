@@ -16,7 +16,15 @@ export default [
         collapsible: true,
         collapsed: false,
         items: [
-            { text: 'svg animate', link: `${commonPath}/svg/a.md` }, // /guide/two.md
+            { text: 'Svg animate', link: `${commonPath}/svg/SvgAnimate.md` }, // /guide/two.md
         ]
-    }
+    },
+    {
+        text: 'Css',
+        collapsible: true,
+        collapsed: false,
+        items: [
+            { text: '三分钟知道js中动态设置css变量的值', link: `${commonPath}/css/CssVariableEdit.md` }, // /guide/two.md
+        ]
+    },
 ]
