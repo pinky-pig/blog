@@ -6,9 +6,9 @@ export default [
         collapsible: true,
         collapsed: false,
         items: [
-            { text: 'VitePress+GitHub搭建个人博客', link: `${commonPath}/note/VitePressGitHubBlog.md` }, 
-            { text: 'PicGo+GitHub搭建个人图床', link: `${commonPath}/note/PicBed.md` }, 
-            { text: 'VitePress配置', link: `${commonPath}/note/VitePressConfig.md` }, 
+            { text: 'VitePress+GitHub搭建个人博客', link: `${commonPath}/note/VitePressGitHubBlog.md` },
+            { text: 'PicGo+GitHub搭建个人图床', link: `${commonPath}/note/PicBed.md` },
+            { text: 'VitePress配置', link: `${commonPath}/note/VitePressConfig.md` },
         ]
     },
     {
@@ -25,6 +25,14 @@ export default [
         collapsed: false,
         items: [
             { text: '三分钟知道js中动态设置css变量的值', link: `${commonPath}/css/CssVariableEdit.md` }, // /guide/two.md
+        ]
+    },
+    {
+        text: '工程化',
+        collapsible: true,
+        collapsed: false,
+        items: [
+            { text: '十分钟配置代码提交规范', link: `${commonPath}/project/CodeFormatter.md` }, // /guide/two.md
         ]
     },
 ]

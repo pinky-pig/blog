@@ -14,7 +14,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    siteTitle: 'Arvin Wang',
+    siteTitle: '',
     logo: { light: '/man_light.svg', dark: '/man_dark.svg' },
     // 获取每个文件最后一次 git 提交的 UNIX 时间戳(ms)，同时它将以合适的日期格式显示在每一页的底部
     lastUpdated: 'Last Updated', // string | boolean

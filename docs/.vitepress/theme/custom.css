@@ -1,22 +1,40 @@
-:root{
-  --c-brand #23d0d0
-  --c-brand-light #1dbdd2
-
-  // 主色调
-  --color-main var(--c-brand)
-  // 底部栏色调
-  --color-border #4dd0e1
-  // 引用字体色
-  --color-block #4dd0e1
-  // 加粗色调
-  --color-strong #26c6da
-  // 代码样式
-  --color-code #26c6da
-  // 引用边框色
-  --color-border-left #26c6da
-
-  // 代码背景色
-  --color-code-bg rgba(77,208,225,.08)
-  // 引用背景色
-  --color-block-bg rgba(77,208,225,.15)
+:root {
+  --bg-point: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Ccircle fill='%2364748b' cx='2' cy='2' r='.5'/%3E%3C/svg%3E");
 }
+
+body {
+  font-family:LXGW WenKai,LXGW WenKai Mono,'Patrick Hand','Patrick Hand SC','Neucha';
+  font-size: 18px;
+}
+
+
+/* 左侧logo */
+.logo{
+  width: 50px;
+  height: 50px !important;
+}
+
+/* 右侧按钮 */
+.VPNavBarMenuLink{
+  font-size: 20px !important;
+}
+
+
+/* 主体内容面板 */
+.VPContent {
+  word-spacing: 0.12rem;
+  /* background-image: var(--bg-point); */
+  background-repeat: repeat;
+}
+
+/* 主体 md 面板 */
+.VPDoc .container .content{
+  padding:1.5rem;
+  box-sizing: border-box;
+  border-radius:1rem;
+  border-color: #41403e;
+  border-style: solid;
+  border-width: 2px;
+}
+
+
